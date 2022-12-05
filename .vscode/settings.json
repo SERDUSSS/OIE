@@ -32,5 +32,9 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "iomanip": "cpp",
+    "cmath": "cpp"
+  }
 }

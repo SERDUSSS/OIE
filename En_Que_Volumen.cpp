@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <math.h>
 
 using namespace std;
 int main()
@@ -11,7 +12,7 @@ int main()
     {
         cin >> x;
         x *= 0.01;
-        if (x < 1){cout << "1\n";}
-        else {cout << setprecision(1) << x << endl;}
+        x = floor(x);
+        cout << x << '\n';
     }
 }
