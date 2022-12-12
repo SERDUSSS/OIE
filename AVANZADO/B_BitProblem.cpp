@@ -23,9 +23,9 @@ int main()
         for (int e = 0; e < iteraciones; e++) // por cada numero 2
         {
             num = arr[e];
-            if ((arr[i] | num) == num){case1++;}
-            if ((num & arr[i]) == num){case2++;}
-            if ((num & arr[i]) != 0){case3++;}
+            if ((arr[i] | num) == arr[i]){case1++;}
+            if ((arr[i] & num) == arr[i]){case2++;}
+            if ((arr[i] & num) != 0){case3++;}
         }
         cout << case1 << " " << case2 << " " << case3 << "\n";
     }
