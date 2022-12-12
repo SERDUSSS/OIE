@@ -1,4 +1,3 @@
-#include <string>
 #include <iostream>
 
 using namespace std;
@@ -15,18 +14,18 @@ int main()
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < iteraciones; i++)
+    for (int i = 0; i < iteraciones; i++) // por cada numero
     {
         num = 0;
         case1 = 0;
         case2 = 0;
         case3 = 0;
-        for (int e = 0; e < iteraciones; e++)
+        for (int e = 0; e < iteraciones; e++) // por cada numero 2
         {
             num = arr[e];
-            if (arr[i] | e == arr[i]){case1++;}
-            if (arr[i] & e == arr[i]){case2++;}
-            if (arr[i] & e != 0){case3++;}
+            if ((arr[i] | num) == num){case1++;}
+            if ((num & arr[i]) == num){case2++;}
+            if ((num & arr[i]) != 0){case3++;}
         }
         cout << case1 << " " << case2 << " " << case3 << "\n";
     }
